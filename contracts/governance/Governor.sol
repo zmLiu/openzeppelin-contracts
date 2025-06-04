@@ -93,7 +93,7 @@ abstract contract Governor is Context, ERC165, EIP712, IGovernor {
      *
      * Note that the chainId and the governor address are not part of the proposal id computation. Consequently, the
      * same proposal (with same operation and same description) will have the same id if submitted on multiple governors
-     * accross multiple networks. This also means that in order to execute the same operation twice (on the same
+     * across multiple networks. This also means that in order to execute the same operation twice (on the same
      * governor) the proposer will have to change the description in order to avoid proposal id conflicts.
      */
     function hashProposal(
